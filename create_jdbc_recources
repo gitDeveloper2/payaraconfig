@@ -1,0 +1,6 @@
+# CREATE CONNECTION POOL
+./asadmin  create-jdbc-connection-pool --datasourceclassname com.mysql.cj.jdbc.MysqlDataSource --restype javax.sql.XADataSource --property portNumber=3306:password=#0Security:user=root:serverName=127.0.0.1:databaseName=jee:useSSL=false jeepool
+JDBC connection pool jeepool created successfully.
+
+# CREATE JDBC RESOURCE
+./asadmin create-jdbc-resource --connectionpoolid jeepool jdbc/jeejdbcrecource
