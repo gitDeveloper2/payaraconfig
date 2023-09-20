@@ -6,5 +6,6 @@ JDBC connection pool jeepool created successfully.
 ./asadmin create-jdbc-resource --connectionpoolid jeepool jdbc/jeejdbcrecource
 
 #MSPACE
-e
-./asadmin  create-jdbc-connection-pool --datasourceclassname com.mysql.jdbc.jdbc2.optional.MysqlDataSource --restype javax.sql.XADataSource --property portNumber=3306:password=#0Security:user=root:serverName=127.0.0.1:databaseName=dbSMS:useSSL=false jeepool
+./asadmin  create-jdbc-connection-pool --datasourceclassname com.mysql.jdbc.jdbc2.optional.MysqlDataSource --restype javax.sql.DataSource --property portNumber=3306:password=mysql123:user=mysql:serverName=127.0.0.1:databaseName=dbSMS:useSSL=false dbSMS
+
+./asadmin create-jdbc-resource --connectionpoolid dbSMS jdbc/jeejdbcrecource
